@@ -21,7 +21,8 @@
               "type": "exec",
               "command": "python",
               "arguments": [
-                "setup.py install"
+                "setup.py",
+                "install"
               ]
             },
             {
