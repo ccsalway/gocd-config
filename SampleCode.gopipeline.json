@@ -2,12 +2,10 @@
   "format_version": 1,
   "group": "MyPythonApp",
   "name": "SampleCode",
-  "lock_behavior": "none",
   "materials": [
     {
       "url": "https://github.com/ccsalway/sample-code.git",
-      "type": "git",
-      "auto_update": true
+      "type": "git"
     }
   ],
   "stages": [
