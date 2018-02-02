@@ -1,1 +1,1 @@
-By default pipelines should be stored in *.gopipeline.json files and environments should be stored in *.goenvironment.json files.
+By default pipelines should be stored in *.gopipeline.[json|yaml] files and environments should be stored in *.goenvironment.[json|yaml] files.
