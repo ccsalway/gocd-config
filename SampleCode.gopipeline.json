@@ -23,7 +23,8 @@
               "command": "python",
               "arguments": [
                 "setup.py",
-                "install"
+                "install",
+                "--user"
               ]
             },
             {
