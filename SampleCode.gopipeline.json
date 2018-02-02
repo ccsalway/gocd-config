@@ -5,8 +5,7 @@
   "materials": [
     {
       "url": "https://github.com/ccsalway/sample-code.git",
-      "type": "git",
-      "auto_update": true
+      "type": "git"
     }
   ],
   "stages": [
