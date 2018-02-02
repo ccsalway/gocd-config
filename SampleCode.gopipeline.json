@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "group": "myGroup",
-  "name": "SampleCode",
+  "name": "myPipeline",
   "materials": [
     {
       "url": "https://github.com/ccsalway/sample-code.git",
