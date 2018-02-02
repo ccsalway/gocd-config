@@ -1,0 +1,25 @@
+format_version: 2
+
+pipelines:
+  SampleCode:  # name of pipeline
+    group: MyPythonApp
+    lock_behavior: none
+    materials:
+      mygit:
+        git: https://github.com/ccsalway/sample-code.git
+        branch: master
+    stages:
+    - defaultStage:  # name of stage
+      jobs:
+        defaultJob:
+          tasks:
+          - exec:
+            command: python
+            arguments:
+              - "setup.py"
+              - "install"
+              - "--user"
+          - exec:
+            command: python
+            arguments:
+              - main.py
