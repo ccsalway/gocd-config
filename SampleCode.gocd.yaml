@@ -3,7 +3,6 @@ format_version: 2
 pipelines:
   SampleCode:  # name of pipeline
     group: MyPythonApp
-    lock_behavior: none
     materials:
       mygit:
         git: https://github.com/ccsalway/sample-code.git
