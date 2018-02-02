@@ -1,12 +1,11 @@
 {
   "format_version": 1,
-  "group": "MyPythonApp",
+  "group": "MyPythonApp1",
   "name": "SampleCode",
   "materials": [
     {
       "url": "https://github.com/ccsalway/sample-code.git",
-      "type": "git",
-      "auto_update": false
+      "type": "git"
     }
   ],
   "stages": [
