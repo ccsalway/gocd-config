@@ -10,7 +10,7 @@
   ],
   "stages": [
     {
-      "name": "stage1",
+      "name": "defaultStage",
       "jobs": [
         {
           "name": "defaultJob",
@@ -24,23 +24,6 @@
                 "--user"
               ]
             },
-            {
-              "type": "exec",
-              "command": "python",
-              "arguments": [
-                "main.py"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "stage2",
-      "jobs": [
-        {
-          "name": "defaultJob",
-          "tasks": [
             {
               "type": "exec",
               "command": "python",
