@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cruise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cruise-config.xsd" schemaVersion="104">
+  <server artifactsdir="artifacts" agentAutoRegisterKey="123456789abcdefgh987654321" webhookSecret="57b5b4a5-e839-4735-935c-168e97b80033" commandRepositoryLocation="default" serverId="239404b7-69fe-4fc9-81e9-945654461562" tokenGenerationKey="fddbb9b3-1a53-4f1e-986b-4c3547bb79ba" />
+  <config-repos>
+    <config-repo pluginId="json.config.plugin" id="repo1">
+      <git url="https://github.com/ccsalway/gocd-config.git" />
+    </config-repo>
+  </config-repos>
+  <templates>
+    <pipeline name="python_setup">
+      <stage name="run_setup" cleanWorkingDir="true">
+        <jobs>
+          <job name="setup.py">
+            <tasks>
+              <exec command="python">
+                <arg>setup.py</arg>
+                <arg>install</arg>
+                <arg>--user</arg>
+              </exec>
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+    </pipeline>
+  </templates>
+</cruise>
